@@ -1,0 +1,39 @@
+body {
+    background-color: rgb(105, 155, 167);
+    margin: 0;
+    padding: 0;
+}
+#content{
+    max-width: 500px;
+    text-align: center;
+    margin: 0 auto;
+}
+img {
+    width: 50%;
+    display: block;
+    margin: 0 auto;
+}
+.headers{
+    color:antiquewhite;
+    text-align: center;
+    font-size: 2em;
+}
+#title{
+    color:antiquewhite;
+    text-align: center;
+    font-size: 3em;
+}
+#title:hover{
+    color:black;
+}
+#numberlist{
+    text-align: left;
+    font-size: 1em;
+    padding-left: 30px;
+}
+footer{
+    text-align: center;
+}
+#education{
+    color: antiquewhite;
+}

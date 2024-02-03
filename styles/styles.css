@@ -1,12 +1,43 @@
 body {
     background-color: antiquewhite;
+    margin: 0;
+    padding: 0;
 }
-
+#content{
+    max-width: 2000px;
+    margin: 0 auto;
+}
+nav{
+    display: flex;
+    justify-content: center;
+}
 .nav_link {
-    padding: 10px;
+    text-decoration: none;
+}
+nav a:hover{
+    color:white;
+    background-color: black;
+}
+nav a {
+    padding: 20px;
     color:black;
-    font-size: 1.3em;
+}
+a:hover{
+    color:rgb(122, 207, 207);
+}
+p{
+    text-align: center;
+}
+img {
+    width: 30%;
+    display: block;
+    margin: 0 auto;
 }
 #main_title {
     font-size: 3em;
+    text-align: center;
+}
+header, footer{
+    background-color:white;
+    padding:20px;
 }
