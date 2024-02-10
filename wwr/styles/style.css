@@ -1,26 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Kreon:wght@300&display=swap');
+
+
+#logo_link{
+    padding-top: 5px;
+}
 #content{
     max-width: 1600px;
     margin: 0 auto;
 }
 nav a{
     text-align: center;
+    padding: 35px;
 }
-#heromsg h1, #heromsg h4{
+#heromsg h1, h2{
     text-align: center;
-} 
-
+    font-family: Caveat, sans-serif;
+    font-size: 2em;
+    margin:0;
+}
+#heromsg p{
+    text-align: center;
+    font-family: Kreon, serif;
+    font-size: 1.2em;
+}
+.hometitle{
+    margin-top: 10px;
+}
 .buttonbox{
     text-align: center;
 }
 main section{
     text-align: center;
 }
+main section img {
+    box-sizing: border-box;
+}
 body{
     background-color:white;
+    padding:0;
 }
 header{
     background-color:#99DDC8;
     color:#283F3B;
+    font-family: Caveat, sans-serif;
 }
 nav a{
     text-align: center;
@@ -35,6 +57,11 @@ nav a:hover{
     background-color:#283F3B;
     color:#99DDC8;
     text-decoration: none;
+    font-family: Kreon, serif;
+    font-size: 18px;
+    padding: 15px 30px;
+    margin-top: 50px;
+    border-radius: 5px;
 }
 .book:hover, .join:hover{
     background-color:#99DDC8;
@@ -47,6 +74,12 @@ nav a:hover{
 .msg{
     background-color:#283F3B;
     color:white;
+    padding: 35px;
+}
+.msg p{
+    font-family: Kreon, serif;
+    font-size: 1.2em;
+    padding-bottom: 15px;
 }
 footer{
     background-color:#99DDC8;
@@ -56,16 +89,32 @@ footer{
 }
 .icon{
     width:80px;
+    padding-top: 10px;
 }
 #heroimg{
     width:100%;
 }
+footer{
+    margin-top: 200px;
+    padding: 25px 50px;
+}
 footer p{
     font-size: 1.2em;
+    font-family: Caveat, sans-serif;
 }
 footer p a:hover{
     text-decoration: underline;
 }
 footer a{
     text-decoration: none;
+    font-family: Kreon, serif;
+}
+footer .social{
+    padding-top: 15px;
+}
+.riverscard, .campingcard, .rapidscard{
+    margin: 200px 0;
+}
+.cardimg {
+    border: 10px solid #283F3B;
 }

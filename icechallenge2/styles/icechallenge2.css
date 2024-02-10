@@ -1,0 +1,20 @@
+#content {
+  margin: 0 auto;
+  background-color: gray;
+  width: 1000px;
+  text-align: center;
+}
+.images {
+  display: inline-block;
+  margin: 0 auto;
+  border: 10px solid;
+  border-color: darkslategray;
+  border-radius: 60%;
+  width: 150px;
+  margin: 50px;
+}
+#mainbg {
+  display: block;
+  margin: 0;
+  width: 1000px;
+}
