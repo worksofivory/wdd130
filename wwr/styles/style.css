@@ -215,9 +215,10 @@ footer .social{
     }
     #hero-msg h4 {
         display: none;
+        color:black;
     }
-    #hero-msg h1 {
-        color: #6f7364;
+    #hero-msg h2 {
+        color: black;
     }
     .home-title {
         font-size: 25px;
