@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Protest+Revolution&display=swap");
+body{
+    background-color: #2d3032;
+}
+p{
+    font-family: "Noto Sans", Helvetica, sans-serif;
+    color:#f8f8f8;
+}
+nav {
+    display:grid;
+    grid-template-columns: 1fr 150px 1fr;
+    align-items: center;
+    background-color: #5382bc;
+    margin: 0;
+    padding: 0;
+}
+nav a {
+    text-decoration: none;
+}
+.nav_link{
+    text-align: center;
+    color:#f8f8f8;
+    font-size: 2em;
+    padding-top: 60px;
+    padding-bottom:60px;
+    z-index: 0;
+}
+.nav_link:hover{
+    color:#c3a071;
+    background-color: #2d3032;
+}
+.nav_image{
+    z-index: 1;
+}
+.headerlogo{
+    width: 100%;
+}
+
+footer{
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    background-color: #5382bc;
+    align-items: center;
+    position: relative;
+}
+footer p{
+    color:#f8f8f8;
+    text-align: center;
+}
+.socials{
+    justify-self: center;
+    padding: 50px;
+}
+#footercharacter{
+    width: 400px;
+    justify-content: left;
+    position: absolute;
+    bottom:5px;
+    left:5px;
+}
+.pagetitle{
+    display:block;
+    margin:0 auto;
+    text-align: center;
+    font-family: "Noto Serif";
+    font-size: 4em;
+    padding:30px;
+    color:#c3a071;
+}
+#homepagelogo{
+    display:block;
+    margin:0 auto;
+    padding:20px;
+    padding-bottom: 50px;
+    width:30%;
+}
+#hello img{
+    display:block;
+    margin:0 auto;
+    width:25%;
+    padding-bottom: 50px;
+}
+#hello p{
+    text-align: center;
+    font-size: 1.2em;
+    width:50%;
+    margin:0 auto;
+}
+.pages{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 40px 100px;
+    align-items: center;
+}
+.gohere{
+    text-decoration: none;
+    text-align: center;
+    color:#f8f8f8;
+    background-color: #5382bc;
+    width:50%;
+    grid-row: 2;
+    font-family: "Noto Serif";
+}
+.gohere:hover{
+    color: #2d3032;
+    background-color: #c3a071;
+}
+.pages img{
+    width:60%;
+    grid-row:1;
+    margin:0 auto;
+}
+.pages p{
+    text-align: center;
+}
+#homegallery{
+    grid-column: 1;
+}
+#homestudio{
+    grid-column:2;
+}
+.story{
+    padding:50px;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 40px 1fr;
+}
+.story h3{
+    grid-column: 1;
+    color:#c3a071;
+}
+.story p{
+    grid-column:1;
+    grid-row:2;
+}
+.story img{
+    grid-row:2;
+    grid-column:2;
+    margin:0 auto;
+    width:50%;
+    padding-bottom: 50px;
+}

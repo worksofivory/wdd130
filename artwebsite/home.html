@@ -4,34 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
+    <link href="styles/style.css" rel="stylesheet">
 </head>
 <body>
     <div id="content">
         <header>
-            <!--Image blank until I draw the corresponding asset-->
-            <img src="" alt="gallery image">
-            <a class = "nav_link" href="gallery.html">The Gallery</a>
-            <a class = "nav_link" href="home.html">
-                <img src="images/Logo.png" alt="logo" width=50px>
-            </a>
-            <a class = "nav_link" href="studio.html">The Studio</a>
-            <img src="images/drawing.jpg" alt="hand with drawing glove and pen on a drawing pad" width=200px>
+            <nav>
+                <a class = "nav_link" href="gallery.html">The Gallery</a>
+                <a class = "nav_image" href="home.html">
+                    <img class="headerlogo" src="images/logo.png" alt="logo">
+                </a>
+                <a class = "nav_link" href="studio.html">The Studio</a>
+            </nav>
         </header>
         <main>
             <h1 class="pagetitle">Works of Ivory</h1>
-            <img src="images/Logo.png" alt="logo">
-            <div class="pages">
-                <img src="" alt="gallery image">
-                <a class="gohere" href="gallery.html"><h2>The Gallery</h2></a>
-                <p>Have a look at some of the artwork I consider to be my best here!</p>
+            <img id="homepagelogo" src="images/transparentlogo.png" alt="logo">
+            <div id="hello">
+                <p>Hello!  You can call me Ivory, and this is Works of Ivory, welcome to my studio!  Here you'll find some of my best works, and learn a little bit about me!  Hope you enjoy your stay!</p>
+                <img src="images/ivystanding.png" alt="small anthropomorphic wolf standing">
             </div>
             <div class="pages">
-                <img src="images/drawing.jpg" alt="hand with drawing glove and pen on a drawing pad" width=200px>
-                <a class="gohere" href="gallery.html"><h2>The Studio</h2></a>
-                <p>Get a peek into my creative process here!</p>
+                    <img id="homegallery" src="images/gallery.jpg" alt="gallery image">
+                    <a class="gohere" href="gallery.html"><h2>The Gallery</h2></a>
+                    <p>Have a look at some of the artwork I consider to be my best here!</p>
+                    <img id="homestudio" src="images/drawing.jpg" alt="hand with drawing glove and pen on a drawing pad">
+                    <a class="gohere" href="gallery.html"><h2>The Studio</h2></a>
+                    <p>Get a peek into my creative process here!</p>
             </div>
-            <img src="images/Lil Ivy Standing.png" alt="small anthropomorphic wolf standing" width = 200>
-            <p>Hello!  You can call me Ivory, and this is Works of Ivory, welcome to my studio!  Here you'll find some of my best works, and learn a little bit about me!  Hope you enjoy your stay!</p>
             <div class="story">
                 <h3>My Art Journey</h3>
                 <p>
@@ -39,7 +39,7 @@
             
             As I grew, so did my passion for drawing. I devoured drawing books, eager to learn how to recreate my latest obsessions with precision and flair. It wasn't long before I ventured into creating characters of my own, delving into the depths of character design through the vast expanse of the internet. Online communities became my classrooms, where I absorbed tutorials and feedback from fellow artists, honing my skills with each stroke of the digital pen.
             
-            One pivotal moment in my artistic journey came during my sophomore year of high school. I mustered the courage to submit a print of my original character to a school art show. Though I didn't clinch the top prize, the recognition and validation I received ignited a newfound confidence in my abilities. It was a turning point that propelled me to push my artistic boundaries further.
+            One pivotal moment in my artistic journey came during my sophomore year of high school. I mustered the courage to submit a print of my original character to a school art show. Though I didn't snag the top prize, the recognition and validation I received ignited a newfound confidence in my abilities. It was a turning point that propelled me to push my artistic boundaries further.
             
             Fuelled by this newfound confidence, I immersed myself in the world of character drawing. YouTube became my sanctuary, where professional artists shared their expertise and offered invaluable critiques. Through relentless practice and a thirst for knowledge, I witnessed a remarkable transformation in my artistry.
             
@@ -47,18 +47,20 @@
             
             As I continue to tread this creative path, I'm driven by a sense of purpose and an insatiable hunger for growth. With each stroke of the brush or click of the mouse, I strive to breathe life into my imagination and share it with the world.
                   </p>
-                  <img src="images/On The Eve Of War.jpg" alt="knight standing on top of a mountain with a large sword" width = 200>
+                  <img src="images/storyart.jpg" alt="knight standing on top of a mountain with a large sword">
             </div>
         </main>
         <footer>
             <a href="home.html">
-                <img src="images/Lil Ivy Sitting.png" alt="small cartoon wolf character">
+                <img id="footercharacter" src="images/ivysitting.png" alt="small cartoon wolf character">
             </a>
             <p>Works of Ivory - 2024</p>
             <!-- Link is a placeholder until I add my twitter account link -->
-            <a href="https://twitter.com" target="_blank">
-                <img src="images/twitter.png" alt="twitter icon">
-            </a>
+            <div class="socials">
+                <a href="https://twitter.com" target="_blank">
+                    <img src="images/twitter.png" alt="twitter icon">
+                </a>
+            </div>
         </footer>
     </div>
 </body>

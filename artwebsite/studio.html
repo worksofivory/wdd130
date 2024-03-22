@@ -3,19 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>The Studio</title>
+    <link href="styles/style.css" rel="stylesheet">
 </head>
 <body>
     <div id="content">
         <header>
-            <!--Image blank until I draw the corresponding asset-->
-            <img src="" alt="gallery image">
-            <a class = "nav_link" href="gallery.html">The Gallery</a>
-            <a class = "nav_link" href="home.html">
-                <img src="images/Logo.png" alt="logo">
-            </a>
-            <a class = "nav_link" href="studio.html">The Studio</a>
-            <img src="images/drawing.jpg" alt="studio image" width=200px>
+            <nav>
+                <a class = "nav_link" href="gallery.html">The Gallery</a>
+                <a class = "nav_image" href="home.html">
+                    <img class="headerlogo" src="images/logo.png" alt="logo">
+                </a>
+                <a class = "nav_link" href="studio.html">The Studio</a>
+            </nav>
         </header>
         <main>
             <h2>The Studio</h2>
@@ -32,13 +32,15 @@
         </main>
         <footer>
             <a href="home.html">
-                <img src="images/Lil Ivy Sitting.png" alt="small cartoon wolf character">
+                <img id="footercharacter" src="images/ivysitting.png" alt="small cartoon wolf character">
             </a>
             <p>Works of Ivory - 2024</p>
             <!-- Link is a placeholder until I add my twitter account link -->
-            <a href="https://twitter.com" target="_blank">
-                <img src="images/twitter.png" alt="twitter icon">
-            </a>
+            <div class="socials">
+                <a href="https://twitter.com" target="_blank">
+                    <img src="images/twitter.png" alt="twitter icon">
+                </a>
+            </div>
         </footer>
     </div>
 </body>
