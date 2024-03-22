@@ -1,10 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Protest+Revolution&display=swap");
-body{
-    background-color: #2d3032;
-}
 p{
     font-family: "Noto Sans", Helvetica, sans-serif;
-    color:#f8f8f8;
+    color:#2d3032;
 }
 nav {
     display:grid;
@@ -66,6 +63,7 @@ footer p{
     font-size: 4em;
     padding:30px;
     color:#c3a071;
+    background-color: #2d3032;
 }
 #homepagelogo{
     display:block;
@@ -123,11 +121,14 @@ footer p{
     padding:50px;
     display:grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 40px 1fr;
+    grid-template-rows: 65px 1fr;
 }
 .story h3{
     grid-column: 1;
+    grid-row: 1;
     color:#c3a071;
+    background-color: #2d3032;
+    width:100%;
 }
 .story p{
     grid-column:1;
