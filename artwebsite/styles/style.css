@@ -1,4 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Protest+Revolution&display=swap");
+#content{
+    max-width: 2000px;
+    margin: 0 auto;
+}
 p{
     font-family: "Noto Sans", Helvetica, sans-serif;
     color:#2d3032;
@@ -129,6 +133,8 @@ footer p{
     color:#c3a071;
     background-color: #2d3032;
     width:100%;
+    padding: 10px; 
+    align-self: center;
 }
 .story p{
     grid-column:1;
