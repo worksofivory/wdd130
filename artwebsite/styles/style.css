@@ -147,3 +147,21 @@ footer p{
     width:50%;
     padding-bottom: 50px;
 }
+
+.imagecolumn {
+  float: left;
+  width: 50%;
+  padding: 10px;
+}
+
+.imagecolumn img {
+  margin-top: 12px;
+  width: 50%;
+}
+
+/* Clear floats after the columns */
+.imagerow:after {
+  content: "";
+  display: table;
+  clear: both;
+}
