@@ -18,30 +18,65 @@
             </nav>
         </header>
         <main>
-            <h2>The Studio</h2>
-            <img src="images/drawing.jpg" alt="studio image" width=200px>
-            <p>
-                Included here are a variety of my older works, unfinished pieces and concepts I have either abandoned, or are still currently working on.  I include these so you all can see a little bit of how my creative mind works, and how many iterations it takes sometimes to make a design that I’m happy with.  As you can see, it’s pretty varied!
-            </p>
-            <div class="studioimages">
-                <img src="images/studio1.png" alt="collection of cartoons and sketches" width = 200>
-                <img src="images/studio2.png" alt="collection of cartoons and sketches" width = 200>
-                <img src="images/sketches.png" alt="very rough sketch of a knight with a sword" width=200>
-                <img src="images/sketches2.png" alt="very rough sketch of an anthropomorphic wolf in starwars inspired armor" width = 200>
+            <img class="galleryimg" src="images/drawing.jpg" alt="studio image" width=200px>
+            <div class="gallerymessage">
+                <h1>The Studio</h1>
+                <p>
+                    Included here are a variety of my older works, unfinished pieces and concepts I have either abandoned, or are still currently working on.  I include these so you all can see a little bit of how my creative mind works, and how many iterations it takes sometimes to make a design that I’m happy with.  As you can see, it’s pretty varied!
+                </p>
+            </div>
+            <div class="studiopages">
+                    <img class="myImg" src="images/studio2.png" alt="collection of cartoons and sketches">
+                    <img class="myImg" src="images/studio1.png" alt="collection of cartoons and sketches">   
+                    <img class="myImg" src="images/sketches.png" alt="very rough sketch of a knight with a sword">
+                    <img class="myImg" src="images/sketches2.png" alt="very rough sketch of an anthropomorphic wolf in starwars inspired armor">   
+            </div>
+            <div id="myModal" class="modal">
+                <span class="close">&times;</span>
+                <img class="modal-content" id="img01">
+                <div id="caption"></div>
             </div>
         </main>
-        <footer>
-            <a href="home.html">
-                <img id="footercharacter" src="images/ivysitting.png" alt="small cartoon wolf character">
-            </a>
-            <p>Works of Ivory - 2024</p>
-            <!-- Link is a placeholder until I add my twitter account link -->
-            <div class="socials">
-                <a href="https://twitter.com" target="_blank">
-                    <img src="images/twitter.png" alt="twitter icon">
+            <footer>
+                <a href="home.html">
+                    <img id="footercharacter" src="images/ivysitting.png" alt="small cartoon wolf character">
                 </a>
-            </div>
-        </footer>
-    </div>
+                <p>Works of Ivory - 2024</p>
+                <!-- Link is a placeholder until I add my twitter account link -->
+                <div class="socials">
+                    <a href="https://twitter.com" target="_blank">
+                        <img src="images/twitter.png" alt="twitter icon">
+                    </a>
+                </div>
+            </footer>
+        </div>
+        <script>
+            // Get the modal
+            var modal = document.getElementById("myModal");
+            
+            // Get the image and insert it inside the modal - use its "alt" text as a caption
+            var img = document.querySelectorAll(".myImg");
+            var modalImg = document.getElementById("img01");
+            var captionText = document.getElementById("caption");
+            console.log(img);
+             // Get the <span> element that closes the modal
+                var span = document.getElementsByClassName("close")[0];
+            
+            // When the user clicks on <span> (x), close the modal
+            span.onclick = function() { 
+              modal.style.display = "none";
+            }
+            for (let i = 0; i < 6; i++) {
+              console.log(img[i]);
+              img[i].addEventListener('click', function () {
+              modal.style.display = "block";
+              modalImg.src = img[i].src;
+              captionText.innerHTML = this.alt;
+              })
+            };
+              
+            
+           
+        </script>
 </body>
 </html>

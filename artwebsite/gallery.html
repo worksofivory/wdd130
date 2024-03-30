@@ -19,10 +19,11 @@
         </header>
         </header>
         <main>
-            <h1>The Gallery</h1>
-            <!--Image blank until I draw the corresponding asset-->
-            <img src="images/gallery.jpg" alt="gallery image">
-            <p>Here are some of what I feel are my best pieces of art.  Some are from several years ago, while others are more recent.  I spent a long time on many of these, averaging about 5 hours of work, the shortest taking around 3, and the longest taking upwards of 6 hours to complete.  All of the digital pieces were made with Clip Studio Paint Pro.</p>
+            <img class="galleryimg" src="images/gallery.jpg" alt="gallery image">
+            <div class="gallerymessage">
+                <h1>The Gallery</h1>
+                <p>Here are some of what I feel are my best pieces of art.  Some are from several years ago, while others are more recent.  I spent a long time on many of these, averaging about 5 hours of work, the shortest taking around 3, and the longest taking upwards of 6 hours to complete.  All of the digital pieces were made with Clip Studio Paint Pro.</p>
+            </div>
             <div class="imagerow">
                 <div class="imagecolumn">
                     <img class="myImg" src="images/Cynthia.png" alt="anthropomorphic wolf girl in fantasy winter clothing">
@@ -41,7 +42,7 @@
                 <span class="close">&times;</span>
                 <img class="modal-content" id="img01">
                 <div id="caption"></div>
-              </div>
+            </div>
         </main>
         <footer>
             <a href="home.html">
@@ -61,14 +62,20 @@
         var modal = document.getElementById("myModal");
         
         // Get the image and insert it inside the modal - use its "alt" text as a caption
-        var img = document.querySelector(".myImg");
+        var img = document.querySelectorAll(".myImg");
         var modalImg = document.getElementById("img01");
         var captionText = document.getElementById("caption");
-        img.onclick = function(){
+        console.log(img);
+ 
+        for (let i = 0; i < 6; i++) {
+          console.log(img[i]);
+          img[i].addEventListener('click', function () {
           modal.style.display = "block";
-          modalImg.src = this.src;
+          modalImg.src = img[i].src;
           captionText.innerHTML = this.alt;
-        }
+          })
+        };
+          
         
         // Get the <span> element that closes the modal
         var span = document.getElementsByClassName("close")[0];
@@ -77,6 +84,6 @@
         span.onclick = function() { 
           modal.style.display = "none";
         }
-        </script>
+    </script>
 </body>
 </html>
